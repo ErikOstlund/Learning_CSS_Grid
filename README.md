@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
+## My CodePen Essentials
+
+[Basics](https://codepen.io/eostlund/pen/oVGxpL?editors=1100)
+
+[Line Names and Area Names](https://codepen.io/eostlund/pen/vPWpWP?editors=1100)
+
+[Aligning Items and Tracks](https://codepen.io/eostlund/pen/pYpLaB?editors=1100)
+
+[min-max and auto-fill/fit](https://codepen.io/eostlund/pen/LaeJBr?editors=1100)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
