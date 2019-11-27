@@ -1,4 +1,11 @@
 .features {
-    background-color: $color-grey-light-2;
     grid-column: center-start / center-end;
+
+    margin: 15rem 0;
+
+    display: grid;
+    // no need to define rows. Default is auto. Would be same if not commented out.
+    // grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6rem;
 }
