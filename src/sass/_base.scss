@@ -36,12 +36,59 @@ body {
 
 .container {
     display: grid;
+
+    // rows
     grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+
+    // columns
+    // STEP 1: 8 columns with a fixed width of 140px (1rem = 10px)
+    // grid-template-columns: repeat(8, 14rem);
+
+    // STEP 2: 8 columns - responsive width that is at least the width of the content and up to 140px
+    // grid-template-columns: repeat(8, minmax(min-content, 14rem));
+
+    // STEP 3: Add column for the sidebar
+    // grid-template-columns: 8rem repeat(8, minmax(min-content, 14rem));
+
+    // STEP 4: To center the 8 columns in the body (remaining space from sidebar),
+    // we add a column before the 8 colums (1fr) and a column at the end
+    // grid-template-columns: 8rem 1fr repeat(8, minmax(min-content, 14rem)) 1fr;
+
+    // STEP 5: Name our column grid-lines. This one is just naming the sidebar
+    // grid-template-columns: [sidebar-start] 8rem [sidebar-end] 1fr repeat(8, minmax(min-content, 14rem)) 1fr;
+
+    // STEP 6: Finish naming the grid-lines. Grid-lines can have multiple names!
+    // grid-template-columns:
+    //     [sidebar-start] 8rem [sidebar-end full-start]
+    //     1fr
+    //     [center-start]
+    //     repeat(8, minmax(min-content, 14rem))
+    //     [center-end]
+    //     1fr [full-end];
+
+    // STEP 7: Name grid-lines in the repeat. Creates [col-start 1], [col-end 1 col-start 2], ...
+    // grid-template-columns:
+    //     [sidebar-start] 8rem [sidebar-end full-start]
+    //     1fr
+    //     [center-start]
+    //     repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    //     [center-end]
+    //     1fr [full-end];
+
+    // STEP 8: Final step! Add minmax to outer columns so there is always some padding
+    grid-template-columns:
+        [sidebar-start] 8rem [sidebar-end full-start]
+        minmax(6rem, 1fr)
+        [center-start]
+        repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+        [center-end]
+        minmax(6rem, 1fr)
+        [full-end];
 
     // development only
     // container and all of it's children
-    // & > * {
-    //     padding: 40px;
-    //     font-size: 3rem;
-    // }
+    & > * {
+        padding: 40px;
+        font-size: 3rem;
+    }
 }

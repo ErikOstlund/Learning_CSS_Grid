@@ -1,15 +1,4 @@
 .features {
+    background-color: $color-grey-light-2;
     grid-column: center-start / center-end;
-    // Why not specify row???
-    // grid-row: 2 / 3;
-
-    margin: 15rem 0;
-
-    // Nesting a container inside a container::makes this item a grid container!
-    display: grid;
-    // makes 3 equally spaced columns in this container
-    grid-template-columns: repeat(3, 1fr);
-    // don't need to specify rows because default is:
-    // grid-template-rows: auto auto;
-    grid-gap: 6rem;
 }
