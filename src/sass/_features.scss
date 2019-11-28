@@ -6,7 +6,13 @@
     display: grid;
     // no need to define rows. Default is auto. Would be same if not commented out.
     // grid-template-rows: auto auto;
-    grid-template-columns: repeat(3, 1fr);
+
+    // this is not responsive
+    // grid-template-columns: repeat(3, 1fr);
+
+    // this is responsive
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
     grid-gap: 6rem;
     // ensure all feature items text starts at the top (default is stretch)
     align-items: start;
