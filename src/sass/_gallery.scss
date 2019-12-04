@@ -9,9 +9,88 @@
     padding: 1.5rem;
 
     &__item {
+        // Big white house w/ pillars
         &--1 {
             grid-row: 1 / span 2;
             grid-column: 1 / span 2;
+        }
+
+        // Dark wood, white couches large photo
+        &--2 {
+            grid-row: 1 / span 3;
+            grid-column: 3 / span 3;
+        }
+
+        // Dark small photo
+        &--3 {
+            grid-row: 1 / span 2;
+            grid-column: 6 / span 1;
+        }
+
+        // Beach
+        &--4 {
+            grid-row: 1 / span 2;
+            grid-column: 7 / span 2;
+        }
+
+        // Big window / 2 chairs
+        &--5 {
+            grid-row: 3 / span 3;
+            grid-column: 1 / span 2;
+        }
+
+        // Pool
+        &--6 {
+            grid-row: 4 / span 2;
+            grid-column: 3 / span 2;
+        }
+
+        // tiny photo
+        &--7 {
+            grid-row: 4 / span 1;
+            grid-column: 5 / span 1;
+        }
+
+        // Fire Place
+        &--8 {
+            grid-row: 3 / span 2;
+            grid-column: 6 / span 2;
+        }
+
+        // White kitchen
+        &--9 {
+            grid-row: 3 / span 3;
+            grid-column: 8 / span 1;
+        }
+
+        // Orange house / palm trees
+        &--10 {
+            grid-row: 6 / span 2;
+            grid-column: 1 / span 1;
+        }
+
+        // White room with high top
+        &--11 {
+            grid-row: 6 / span 2;
+            grid-column: 2 / span 2;
+        }
+
+        // sofa and chair
+        &--12 {
+            grid-row: 6 / span 2;
+            grid-column: 4 / span 1;
+        }
+
+        // pool table
+        &--13 {
+            grid-row: 5 / span 3;
+            grid-column: 5 / span 3;
+        }
+
+        // Small white house
+        &--14 {
+            grid-row: 6 / span 2;
+            grid-column: 8 / span 1;
         }
     }
 
